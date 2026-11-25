@@ -40,10 +40,3 @@ Este documento reúne los conceptos de ciencia de datos y programación en Pytho
   * `sns.pairplot(datos_limpios, hue="Hogwarts House")`: Genera automáticamente toda la cuadrícula de cruces entre variables, usando el parámetro `hue` para colorear cada punto según la casa del alumno.
 
 ---
-
-## 3. Conceptos de programación aplicados
-
-* **Automatización con listas y bucles `for`:** En lugar de repetir código 13 veces para explorar cada asignatura, se guardan los nombres en una lista (`subjects`) y se recorren con `for element in subjects:`. Dentro del bucle se usa la variable sin comillas (`df[element]`) en lugar de un texto fijo (`df["Astronomy"]`).
-* **Sangría (indentación):** En Python, los espacios a la izquierda (4 u 8 espacios) definen qué instrucciones pertenecen a una función, a un bucle `for` o a un bloque `try / except`. Si `plt.show()` queda fuera de la sangría del bucle, todos los gráficos se dibujan amontonados en una sola ventana.
-* **Argumentos por terminal (`sys.argv` y `sys.exit()`):** Permite pasar la ruta del dataset al ejecutar el script (`python3 histogram.py dataset_train.csv`) leyendo `sys.argv[1]`. Se comprueba `len(sys.argv) < 2` sin forzar un nombre fijo de ruta para que el programa funcione aunque el archivo esté en otra carpeta.
-* **Manejo de errores (`try / except Exception`):** Actúa como red de seguridad al abrir el CSV; si el usuario escribe mal el nombre del archivo, captura el fallo, muestra un aviso limpio por pantalla y cierra el programa ordenadamente con `sys.exit()`.
