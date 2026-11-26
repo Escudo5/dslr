@@ -8,6 +8,7 @@
 ### Histogram
 En el archivo de histogram, el objetivo es comparar todas las asignaturas y buscar los graficos que tengan las asignaturas mas parecidas (distrubuciones homogeneas)
 
+![alt text](histogram.png)
 ### Pair_plot
 Similar a histogram pero esta vez comparamos dos asignaturas. Cada punto representa un alumno.
 
@@ -17,6 +18,12 @@ Para ello creo una lista con todas las asignaturas y dentro de un bucle hago los
     subjects = ["Arithmancy","Astronomy","Herbology","Defense Against the Dark Arts","Divination","Muggle Studies","Ancient Runes","History of Magic","Transfiguration","Potions","Care of Magical Creatures","Charms","Flying"]
 
 
+### Scatter plot
+Grafico que compara 2 asignaturas y como se reparten las notas de los estudiantes
+
+Si no tienen relacion forman un nube dispersa
+
+![alt text](scatter.png)
 
 ## pair_plot.py
 
